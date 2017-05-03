@@ -2,6 +2,20 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
+    <PackageId>Microsoft.ProjectOxford.Emotion.DotNetCore</PackageId>
+    <Version>1.1.0</Version>
+    <Authors>Adam Grocholski</Authors>
+    <Company>Adam Grocholski</Company>
+    <Product>Microsoft.ProjectOxford.Emotion.DotNetCore</Product>
+    <PackageReleaseNotes>Initial release to support .NET Core 1.1</PackageReleaseNotes>
+    <PackageTags>Microsoft Cognitive Services Emotion Project Oxford</PackageTags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Copyright>Copyright (c) 2017</Copyright>
+    <RepositoryUrl>https://github.com/adgroc/Cognitive-Emotion-DotNetCore</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/adgroc/Cognitive-Emotion-DotNetCore</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/adgroc/Cognitive-Emotion-DotNetCore/blob/master/LICENSE.md</PackageLicenseUrl>
+    <Description>Microsoft Cognitive Services Emotion Recognition Client Library for .NET Core</Description>
   </PropertyGroup>
 
   <ItemGroup>
