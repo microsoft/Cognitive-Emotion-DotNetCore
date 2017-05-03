@@ -15,9 +15,11 @@ namespace EmotionServiceClientSample
             {
                 Console.WriteLine("Enter your Cognitive Services Emotion API Key:");
                 var apiKey = Console.ReadLine();
+                Console.WriteLine();
 
                 Console.WriteLine("Enter the url of the image you want to detect emotion in:");
                 var imageUrl = Console.ReadLine();
+                Console.WriteLine();
 
                 DetectEmotion(apiKey, imageUrl).Wait();
             }
@@ -25,6 +27,7 @@ namespace EmotionServiceClientSample
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine(ex.Message);
+                Console.WriteLine();
             }
 
             Console.ForegroundColor = ConsoleColor.White;
@@ -55,7 +58,7 @@ namespace EmotionServiceClientSample
                 foreach (Emotion emotion in emotionResult)
                 {
                     Console.ForegroundColor = ConsoleColor.Blue;
-                    Log("Emotion[" + emotionResultCount + "]");
+                    Log("Face[" + emotionResultCount + "]");
 
                     Console.ForegroundColor = ConsoleColor.Green;
                     Log("  FaceRectangle");
@@ -65,14 +68,15 @@ namespace EmotionServiceClientSample
                     Log("    Height :" + emotion.FaceRectangle.Height);
 
                     Console.ForegroundColor = ConsoleColor.Magenta;
-                    Log("  Anger    : " + emotion.Scores.Anger.ToString());
-                    Log("  Contempt : " + emotion.Scores.Contempt.ToString());
-                    Log("  Disgust  : " + emotion.Scores.Disgust.ToString());
-                    Log("  Fear     : " + emotion.Scores.Fear.ToString());
-                    Log("  Happiness: " + emotion.Scores.Happiness.ToString());
-                    Log("  Neutral  : " + emotion.Scores.Neutral.ToString());
-                    Log("  Sadness  : " + emotion.Scores.Sadness.ToString());
-                    Log("  Surprise  : " + emotion.Scores.Surprise.ToString());
+                    Log("  Emotions");
+                    Log("    Anger    : " + emotion.Scores.Anger.ToString());
+                    Log("    Contempt : " + emotion.Scores.Contempt.ToString());
+                    Log("    Disgust  : " + emotion.Scores.Disgust.ToString());
+                    Log("    Fear     : " + emotion.Scores.Fear.ToString());
+                    Log("    Happiness: " + emotion.Scores.Happiness.ToString());
+                    Log("    Neutral  : " + emotion.Scores.Neutral.ToString());
+                    Log("    Sadness  : " + emotion.Scores.Sadness.ToString());
+                    Log("    Surprise  : " + emotion.Scores.Surprise.ToString());
 
                     Log("");
 

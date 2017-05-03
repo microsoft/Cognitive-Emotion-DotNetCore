@@ -5,7 +5,7 @@
 // Microsoft Cognitive Services (formerly Project Oxford): https://www.microsoft.com/cognitive-services
 // 
 // Microsoft Cognitive Services (formerly Project Oxford) GitHub:
-// https://github.com/Microsoft/Cognitive-Emotion-Windows
+// https://github.com/Microsoft/Cognitive-Common-Windows
 // 
 // Copyright (c) Microsoft Corporation
 // All rights reserved.
@@ -34,11 +34,13 @@
 namespace Microsoft.ProjectOxford.Emotion.Contract
 {
     /// <summary>
-    /// Event information for frame-by-frame emotion detection.
+    /// Opaque object representing a video operation.
     /// </summary>
-    public class VideoAggregateEvent
+    public class VideoOperation
     {
-        public EmotionScores WindowFaceDistribution { get; set; }
-        public EmotionScores WindowMeanScores { get; set; }
+        /// <summary>
+        /// Operation URL representing one video operation
+        /// </summary>
+        public string Url { get; set; }
     }
 }

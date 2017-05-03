@@ -31,13 +31,17 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 // 
 
-using Microsoft.ProjectOxford.Common;
-
 namespace Microsoft.ProjectOxford.Emotion.Contract
 {
-    public class Emotion : Microsoft.ProjectOxford.Common.Contract.Emotion
+    public class Emotion
     {
-        // this type is defined for backward-compat only
+        /// <summary>
+        /// Gets or sets the face rectangle.
+        /// </summary>
+        /// <value>
+        /// The face rectangle.
+        /// </value>
+        public Rectangle FaceRectangle { get; set; }
 
         /// <summary>
         /// Gets or sets the emotion scores.
@@ -45,12 +49,42 @@ namespace Microsoft.ProjectOxford.Emotion.Contract
         /// <value>
         /// The emotion scores.
         /// </value>
-        public new Scores Scores
+        public EmotionScores Scores { get; set; }
+
+        #region overrides
+        public override bool Equals(object o)
         {
-            get
+            if (o == null) return false;
+
+            var other = o as Emotion;
+
+            if (other == null) return false;
+
+            if (this.FaceRectangle == null)
             {
-                return (Scores)base.Scores;
+                if (other.FaceRectangle != null) return false;
+            }
+            else
+            {
+                if (!this.FaceRectangle.Equals(other.FaceRectangle)) return false;
+            }
+
+            if (this.Scores == null)
+            {
+                return other.Scores == null;
+            }
+            else
+            {
+                return this.Scores.Equals(other.Scores);
             }
         }
+
+        public override int GetHashCode()
+        {
+            int r = (FaceRectangle == null) ? 0x33333333 : FaceRectangle.GetHashCode();
+            int s = (Scores == null) ? 0xccccccc : Scores.GetHashCode();
+            return r ^ s;
+        }
+        #endregion
     }
 }
