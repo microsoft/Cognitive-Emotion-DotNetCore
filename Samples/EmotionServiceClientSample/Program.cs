@@ -1,7 +1,7 @@
 ﻿using System;
-using Microsoft.ProjectOxford.Common.Contract;
 using Microsoft.ProjectOxford.Emotion;
 using System.Threading.Tasks;
+using Microsoft.ProjectOxford.Emotion.Contract;
 
 namespace EmotionServiceClientSample
 {
