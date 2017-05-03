@@ -7,7 +7,7 @@
     <Authors>Adam Grocholski</Authors>
     <Company>Adam Grocholski</Company>
     <Product>Microsoft.ProjectOxford.Emotion.DotNetCore</Product>
-    <PackageReleaseNotes>Initial release to support .NET Core 1.1</PackageReleaseNotes>
+    <PackageReleaseNotes>Removed dependency from Microsoft.ProjectOxford.Common.</PackageReleaseNotes>
     <PackageTags>Microsoft Cognitive Services Emotion Project Oxford</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Copyright>Copyright (c) 2017</Copyright>
