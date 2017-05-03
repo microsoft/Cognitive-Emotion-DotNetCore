@@ -5,7 +5,7 @@
 // Microsoft Cognitive Services (formerly Project Oxford): https://www.microsoft.com/cognitive-services
 //
 // Microsoft Cognitive Services (formerly Project Oxford) GitHub:
-// https://github.com/Microsoft/Cognitive-Common-Windows
+// https://github.com/Microsoft/Cognitive-Emotion-DotNetCore
 //
 // Copyright (c) Microsoft Corporation
 // All rights reserved.
@@ -33,9 +33,8 @@
 
 using System;
 
-using System.Collections.Generic;
 using System.Net;
-using System.Text;
+
 
 namespace Microsoft.ProjectOxford.Emotion
 {
