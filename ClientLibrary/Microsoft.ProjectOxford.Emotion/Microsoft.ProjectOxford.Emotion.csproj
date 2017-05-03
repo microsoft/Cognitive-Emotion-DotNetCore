@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
     <PackageId>Microsoft.ProjectOxford.Emotion.DotNetCore</PackageId>
-    <Version>1.1.0</Version>
+    <Version>1.1.0.1</Version>
     <Authors>Adam Grocholski</Authors>
     <Company>Adam Grocholski</Company>
     <Product>Microsoft.ProjectOxford.Emotion.DotNetCore</Product>
