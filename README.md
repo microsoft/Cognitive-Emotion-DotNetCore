@@ -2,6 +2,11 @@
 
 # Emotion API: .NET Core Client Library & Sample
 
+| Branch      | Build Status  |
+| ----------- | ------------- |
+| develop     | [![Build Status](https://travis-ci.org/Microsoft/Cognitive-Emotion-DotNetCore.svg?branch=develop)](https://travis-ci.org/Microsoft/Cognitive-Emotion-DotNetCore) |
+| master      | [![Build Status](https://travis-ci.org/Microsoft/Cognitive-Emotion-DotNetCore.svg?branch=master)](https://travis-ci.org/Microsoft/Cognitive-Emotion-DotNetCore) |
+
 ## Overview
 The Emotion API takes an image as an input, and returns the confidence across a set of emotions for each face in the image, as well as bounding box for the face, from the Face API. The emotions detected are happiness, sadness, surprise, anger, fear, contempt, disgust or neutral. These emotions are communicated cross-culturally and universally via the same basic facial expressions, where are identified by Emotion API.
 
